@@ -25,7 +25,7 @@ module.exports = function (fileName, joinCwd) {
       return this.emit('error', new PluginError('gulp-json-concat-with-path', 'Streaming not supported.'));
     }
     
-    var key = joinCwd ? path.relative(path.join(file.cwd,joinCwd),file.path) : file.relative;
+    var key = joinCwd ? path.relative(path.join(file.cwd,joinCwd),file.path) : path.relative(file.cwd,file.path);
     data[key] = JSON.parse(file.contents.toString());
   }
 
