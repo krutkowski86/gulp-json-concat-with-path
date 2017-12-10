@@ -18,26 +18,26 @@ gulp.src('*.json')
 ## Example
 
 > /app/component1/data.json
-```json
+```javascript
 {
 	"header": "component1"
 }
 ```
 
 > /app/component2/data.json
-```json
+```javascript
 {
 	"header": "component2"
 }
 ```
 
 > output
-```json
+```javascript
 {
-	"app\\component1\\data.json": {
+	"app\component1\data.json": {
 		"header": "component1"
 	},
-	"app\\component2\\data.json": {
+	"app\component2\data.json": {
 		"header": "component1"
 	}
 }
