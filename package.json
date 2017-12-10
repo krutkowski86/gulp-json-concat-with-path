@@ -1,0 +1,25 @@
+{
+  "name": "gulp-json-concat-with-path",
+  "version": "1.0.0",
+  "description": "Concatenate json files to specified file containing a key with a path to each json file.",
+  "keywords": [
+    "gulpplugin",
+    "json",
+    "concat"
+  ],
+  "author": {
+    "name": "Krzysztof Rutkowski",
+    "email": "krzysztof.rutkowski.86@gmail.com",
+    "url": "https://github.com/krutkowski86"
+  },
+  "repository": "krutkowski86/gulp-json-concat-with-path",
+  "dependencies": {
+    "through": "*",
+    "gulp-util": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "license": "MIT"
+}
