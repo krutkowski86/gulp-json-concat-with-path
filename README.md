@@ -15,6 +15,34 @@ gulp.src('*.json')
 	.pipe(gulp.dest('outputFolder'));
 ```
 
+## Example
+
+> /app/component1/data.json
+```json
+{
+	"header": "component1"
+}
+```
+
+> /app/component2/data.json
+```json
+{
+	"header": "component2"
+}
+```
+
+> output
+```json
+{
+	"app\\component1\\data.json": {
+		"header": "component1"
+	},
+	"app\\component2\\data.json": {
+		"header": "component1"
+	}
+}
+```
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
