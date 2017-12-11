@@ -1,5 +1,6 @@
 # gulp-json-concat-with-path
 > Concatenate json files to specified file containing a key with a path to each json file.
+> The key (path) is build with a POSIX separator.
 
 ## Usage
 ```shell
@@ -34,10 +35,10 @@ gulp.src('*.json')
 > output
 ```javascript
 {
-	"app\component1\data.json": {
+	"app/component1/data.json": {
 		"header": "component1"
 	},
-	"app\component2\data.json": {
+	"app/component2/data.json": {
 		"header": "component1"
 	}
 }
