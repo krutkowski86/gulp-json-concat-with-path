@@ -1,6 +1,6 @@
 {
   "name": "gulp-json-concat-with-path",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Concatenate json files to specified file containing a key with a path to each json file.",
   "keywords": [
     "gulpplugin",
