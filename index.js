@@ -28,6 +28,7 @@ module.exports = function (fileName, joinCwd) {
 
     try {
       var key = joinCwd ? path.relative(path.join(file.cwd,joinCwd),file.path) : path.relative(file.cwd,file.path);
+      key = key.replace(/\\/g,'/');
       data[key] = JSON.parse(file.contents.toString());
     } catch (err) {
       error = true;
